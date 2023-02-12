@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"
+          name="discreption" content="about table"
+          name="keywords" content="html,css"
+          http-equiv="refress" content="30"
+        >
+
+
+    <style>
+        table,td {border: 3px solid black ;padding: 20px 20px;}
+        th{color:gold; font-size: large;background-color: black;}
+    </style>
+    <title>Document</title>
+</head>
+<body style="text-align: center;">
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            
+            // Create gradient
+            var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+            grd.addColorStop(0, "red");
+            grd.addColorStop(1, "white");
+            
+            // Fill with gradient
+            ctx.fillStyle = grd;
+            ctx.fillRect(10, 10, 150, 80);
+            </script>
+    <h1>Welcome to aman web pages.</h1> <br> <br> <br> <hr>
+    <div>
+        <table style="width: 100%;"  >
+            <tr>
+                <th>col1</th>
+                <th>col2</th>
+                <th>col3</th>
+                <th>col4</th>
+            </tr>
+            <tr>
+                <td colspan="2" style="background-color: black;"> </td>
+                <td rowspan="2" style="background-color:aliceblue;"> </td>
+                <td rowspan="2" style="background-color:antiquewhite"> </td>      
+            </tr>
+            <tr>
+               <td colspan="2" style="background-color:aqua"> </td>
+            </tr>
+            <tr>
+                <td style="background-color:aquamarine"> </td>
+                <td style="background-color:blue"></td>
+                <td style="background-color:brown"> </td>
+                <td style="background-color:chartreuse"> </td>
+            </tr>
+            <tr>
+               <td style="background-color:coral"> </td>
+               <td style="background-color:cornsilk"> </td>
+               <td colspan="2"style="background-color:red"> </td>
+            </tr>
+        </table>
+    </div> 
+</body>
+</html>

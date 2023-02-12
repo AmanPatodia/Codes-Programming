@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         th,td{
+            border: 1px solid black;
+            background-color: aqua;
+         }
+         body{
+            text-align: center;
+         }
+         tr:hover{
+            background-color: blue;
+         }
+    </style>
+</head>
+<body>
+    <table style="width: 100%">
+        <tr>
+            <th colspan="2">Name</th>
+            <th rowspan="3">Roll numbers</th>
+        </tr>
+        <tr>
+            <td colspan="1">Aman</td>
+            <td>23011</td>
+        </tr>
+        <tr>
+            <td colspan="1">Kiku</td>
+            <td>2301</td>
+        </tr>
+        <tr>
+            <td colspan="2">Anita</td>
+            <td>230115</td>
+        </tr>
+        <tr>
+            <td colspan="2">Ankiush</td>
+            <td>56011</td>
+        </tr>
+        
+    </table>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"> <br>
+        
+        <input type="radio" name="fav" id="css" value="css"><br>
+        <label for="css">css</label>
+        <label for="java">java</label>
+        <input type="radio" id="java" name="fav" value="java"> <br>
+        <label for="c">c</label>
+        <input type="radio" name="fav" id="c" value="c"><br>
+    </form>
+</body>
+</html>

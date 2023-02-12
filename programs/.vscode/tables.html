@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+     
+        table,td ,th{
+        border: 1px solid black;
+        border-collapse:collapse;
+        width: 300px;
+        height: 20px;
+        margin-top: 1cm;
+        }
+        table.center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        hr.border{
+            border-width: 3px;
+            border-style:dotted;
+            border-color: tomato;
+        }
+    </style>
+    <title>Tables</title>
+</head>
+<body>
+    <hr class="border">
+    <h3 style="text-align: center;"><b>Bill</b></h3>
+    <table class="center">
+        <tr>
+            <th>Items</th>
+            <th>Price(rs)</th>
+            <th>Tax(rs)</th>
+            <th>Estimate Amount</th>
+        </tr>
+        <tr>
+            <td>rice</td>
+            <td>100</td>
+            <td>10</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>Dal</td>
+            <td>150</td>
+            <td>20</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td>soap</td>
+            <td>200</td>
+            <td>30</td>
+            <td>230</td>
+
+        </tr>
+        <tr>
+            <td>maggie</td>
+            <td>250</td>
+            <td>35</td>
+            <td>285</td>
+        </tr>
+        <tr>
+            <td>colgate</td>
+            <td>125</td>
+            <td>15</td>
+            <td>140</td>
+        </tr>
+        <tr>
+            <td colspan="1" >All Total</td>
+            <td>825</td>
+            <td>110</td>
+            <td>----------</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;"><b> All Total</b></td>
+            <td>960</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">Discount <strong>20%</strong></td>
+            <td>768</td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;"> <strong>Grand Total</strong></td>
+            <td style="text-align: center;">768</td>
+        </tr>
+    </table>
+    <br>
+     <hr class="border">
+     <table class="center">
+         <th> </th>
+         <th> </th>
+         <th> </th>
+         <th> </th>
+         <tr>
+             <td> </td>
+             <td> </td>
+             <td> </td>
+             <td> </td>
+         </tr>
+         <tr>
+             <td colspan="3"></td>
+             <td></td>
+         </tr>
+         <tr>
+            <td colspan="1"></td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+             <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td></td>
+        </tr>
+
+    </table>
+</body>
+</html>
