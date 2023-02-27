@@ -6,11 +6,17 @@ void funandsum(int ind,int arr[],int n,vector<int>&ds)
     if(ind==n)
     {
         int x=1;
-       for(int i=0;i<ds.size();i++)
-       {
-        x=x&ds[i];
-       }
-        sum+=x;
+        if(ds.size()==1) sum+=ds[0];
+        else{
+            x= ds[0];
+              for(int i=1;i<ds.size();i++)
+            {
+               cout<<ds[i]<<" ";
+               x=x&ds[i];
+            }
+           cout<<"and of subset are : "<<x<<endl;
+           sum+=x;
+        }
         return ;
     }
     ds.push_back(arr[ind]);
@@ -26,6 +32,6 @@ int main()
     int n =3;
     vector<int>ds;
     funandsum(0,arr,n,ds);
-    cout<<sum;
+    cout<<sum-n;
     return 0;
 }
